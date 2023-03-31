@@ -1,6 +1,17 @@
 import { FC } from "react";
-import { TicketsProvider } from "./providers";
+import { FilterPanel, FlightList } from "components";
+import { Layout } from "containers";
+import { FilterProvider, TicketsProvider } from "providers";
 
-const App: FC = () => <TicketsProvider></TicketsProvider>;
+const App: FC = () => (
+  <TicketsProvider>
+    <FilterProvider>
+      <Layout>
+        <FilterPanel />
+        <FlightList />
+      </Layout>
+    </FilterProvider>
+  </TicketsProvider>
+);
 
 export default App;
