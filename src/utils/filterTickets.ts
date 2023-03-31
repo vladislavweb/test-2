@@ -1,6 +1,6 @@
 import * as R from "ramda";
-import { OptionsAmountOfTransfers } from "../providers";
-import { Tickets } from "../types";
+import { OptionsAmountOfTransfers } from "providers";
+import { Tickets } from "types";
 
 interface FilterTicketsParams {
   tickets: Tickets;

@@ -1,8 +1,8 @@
 import { createContext, FC, ReactNode, useContext, useEffect, useState } from "react";
 import * as R from "ramda";
-import { AmountOfTransfers, Tickets } from "../../types";
-import { filterTickets } from "../../utils";
-import { TicketsContext } from "../tickets";
+import { AmountOfTransfers, Tickets } from "types";
+import { filterTickets } from "utils";
+import { TicketsContext } from "providers";
 
 type Props = FC<{ children?: ReactNode }>;
 

@@ -1,5 +1,5 @@
 import { createContext, FC, ReactNode, useState } from "react";
-import { Tickets } from "../../types";
+import { Tickets } from "types";
 
 type Props = FC<{ children?: ReactNode }>;
 
