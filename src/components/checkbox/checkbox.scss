@@ -1,0 +1,38 @@
+.custom-checkbox {
+  padding: 4px 0 4px 4px;
+  border-radius: 4px;
+  user-select: none;
+
+  &:hover {
+    background-color: #f4f4f4;
+  }
+
+  .custom-checkbox__label-wrapper {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    .custom-checkbox__left-label {
+      margin-right: 10px;
+    }
+
+    .custom-checkbox__input {
+      height: 20px;
+      width: 20px;
+      margin: 0;
+    }
+
+    .custom-checkbox__right-label {
+      margin-left: 10px;
+    }
+
+    .custom-checkbox__left-label,
+    .custom-checkbox__right-label {
+      font-size: 18px;
+
+      &:empty {
+        display: none;
+      }
+    }
+  }
+}
